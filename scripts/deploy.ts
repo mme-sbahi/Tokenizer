@@ -1,26 +1,23 @@
-import { ethers } from "hardhat";
+import { network } from "hardhat";
 
 async function main() {
-console.log("Deploying Frontend42Token...");
+  const { ethers } = await network.connect("sepolia");
 
+  console.log("Deploying Frontend42Token...");
 
-const Token = await ethers.getContractFactory(
+  const token = await ethers.deployContract(
     "Frontend42Token"
-);
+  );
 
-const token = await Token.deploy();
+  await token.waitForDeployment();
 
-await token.waitForDeployment();
+  const address = await token.getAddress();
 
-const address = await token.getAddress();
-
-console.log("Token deployed successfully!");
-console.log("Contract address:", address);
-
-
+  console.log("Token deployed successfully!");
+  console.log("Contract address:", address);
 }
 
 main().catch((error) => {
-console.error(error);
-process.exitCode = 1;
+  console.error(error);
+  process.exitCode = 1;
 });

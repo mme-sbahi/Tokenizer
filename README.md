@@ -2,7 +2,7 @@
 
 ## Overview
 
-Tokenizer is a blockchain project that consists of creating and deploying a BEP20-compatible token on the BNB Smart Chain Testnet.
+Tokenizer is a blockchain project that consists of creating and deploying an ERC20-compatible token on the Ethereum Sepolia Testnet.
 
 The objective of this project is to understand blockchain fundamentals, smart contracts, token standards, wallets, deployment, and security concepts.
 
@@ -37,7 +37,7 @@ The objective of this project is to understand blockchain fundamentals, smart co
 * Hardhat
 * OpenZeppelin Contracts
 * MetaMask
-* BNB Smart Chain Testnet
+* Ethereum Sepolia Testnet
 
 ---
 
@@ -125,3 +125,11 @@ This reduces the risk of introducing security vulnerabilities.
 ## Author
 
 42 Network - Tokenizer Project
+
+
+## Deployment Information
+
+Network: Ethereum Sepolia
+
+Contract Address:
+0xB834a3e719A0f2AB82723e5FBECE7ef5c727D511
