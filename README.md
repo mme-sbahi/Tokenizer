@@ -8,9 +8,19 @@ The objective of this project is to understand blockchain fundamentals, smart co
 
 ---
 
+## Platform Choice
+
+Ethereum Sepolia Testnet was chosen because it is one of the most widely used Ethereum testing networks. It allows safe deployment and testing of smart contracts without spending real ETH while remaining compatible with the Ethereum ecosystem and development tools such as Hardhat, OpenZeppelin, and MetaMask.
+
+
+## Language Choice
+
+The smart contract was developed in Solidity because it is the standard language for writing Ethereum-compatible smart contracts.
+
+
 ## Features
 
-* BEP20/ERC20-compatible token
+* ERC20-compatible token
 * Token transfers
 * Ownership management
 * Token minting
@@ -90,7 +100,7 @@ npx hardhat test
 ## Deployment
 
 ```bash
-npx hardhat run scripts/deploy.ts
+npx hardhat run scripts/deploy.ts --network sepolia
 ```
 
 ---
@@ -133,3 +143,5 @@ Network: Ethereum Sepolia
 
 Contract Address:
 0xB834a3e719A0f2AB82723e5FBECE7ef5c727D511
+
+The contract was successfully deployed and can be interacted with through MetaMask or any Ethereum-compatible tool connected to the Sepolia test network.

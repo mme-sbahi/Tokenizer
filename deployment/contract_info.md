@@ -13,7 +13,7 @@ Initial Supply:
 1,000,000 F42
 
 Deployer:
-<your wallet address>
+0x417E2B1Cbd15C6C886Bf36B31FB5BAA52Cc6ab0f
 
 Deployment Date:
 2026-06-20
